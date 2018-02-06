@@ -1,9 +1,10 @@
 Package: docthis
 Type: Package
 Title: RStudio Addin to Ease Writing Documentation
-Authors@R: person("Matthew", "Lincoln", email = "matthew.d.lincoln@gmail.com",
-    role = c("aut", "cre"))
-Version: 0.1.1
+Authors@R: c(person("Matthew", "Lincoln", email = "matthew.d.lincoln@gmail.com",
+    role = c("aut", "cre")),
+    person("Alex","Pico",email = "alex.pico@gladstone.ucsf.edu",role=c("aut")))
+Version: 0.1.2
 Description: An RStudio addin that builds the skeleton of documentation for an R
     function or dataframe using the roxygen2 syntax.
 License: MIT + file LICENSE
