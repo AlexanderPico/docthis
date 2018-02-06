@@ -101,12 +101,16 @@ doc_function <- function(obj, label) {
   argnames <- names(arglist)
 
   # Write individual parameter description templates
-  params <- paste0("#\' @param ", argnames, " DESCRIPTION.", collapse = "\n")
-
+  params <- paste0("#\' @param ", argnames, " DESCRIPTION", collapse = "\n")
+  
+  # Generate default title
+  title <- gsub('([[:upper:]])', ' \\1', label)
+  title <- paste0(toupper(substring(title,1,1)),substring(title,2))
 
   # Return the full documentation template
   paste0("
-#\' @title ",label,"
+#\' @title ",title,"
+#\'
 #\' @description FUNCTION_DESCRIPTION
 ", params, "
 #\' @return RETURN_DESCRIPTION
