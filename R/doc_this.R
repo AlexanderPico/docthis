@@ -106,14 +106,13 @@ doc_function <- function(obj, label) {
 
   # Return the full documentation template
   paste0("
-#\' FUNCTION_TITLE
-#\'
-#\' FUNCTION_DESCRIPTION
-#\'
+#\' @title ",label,"
+#\' @description FUNCTION_DESCRIPTION
 ", params, "
-#\'
 #\' @return RETURN_DESCRIPTION
-#\' @examples
-#\' # ADD_EXAMPLES_HERE
+#\' @examples \donttest{
+#\' ",label,"()
+#\' }
+#\' @export
 ", label)
 }
