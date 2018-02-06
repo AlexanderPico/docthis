@@ -108,7 +108,7 @@ doc_function <- function(obj, label) {
   title <- paste0(toupper(substring(title,1,1)),substring(title,2))
 
   # Return the full documentation template
-  paste0("
+  paste0("# ------------------------------------------------------------------------------
 #\' @title ",title,"
 #\'
 #\' @description FUNCTION_DESCRIPTION
