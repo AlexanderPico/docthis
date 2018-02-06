@@ -110,7 +110,7 @@ doc_function <- function(obj, label) {
 #\' @description FUNCTION_DESCRIPTION
 ", params, "
 #\' @return RETURN_DESCRIPTION
-#\' @examples \donttest{
+#\' @examples \\donttest{
 #\' ",label,"()
 #\' }
 #\' @export
